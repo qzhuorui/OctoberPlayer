@@ -1,0 +1,3 @@
+D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/release/x86/CMakeFiles/native-lib.dir
+D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/release/x86/CMakeFiles/edit_cache.dir
+D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/release/x86/CMakeFiles/rebuild_cache.dir

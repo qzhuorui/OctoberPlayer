@@ -1,0 +1,25 @@
+ninja: Entering directory `D:\PrivateStudy\Code\OctoberPlayer\app\.cxx\cmake\debug\armeabi-v7a'
+[1/4] Building C object CMakeFiles/native-lib.dir/utils/timer.c.o
+[2/4] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/native-lib.cpp:17:23: warning: 'av_codec_next' is deprecated [-Wdeprecated-declarations]
+    AVCodec *c_temp = av_codec_next(NULL);
+                      ^
+D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include\libavcodec/avcodec.h:4117:1: note: 'av_codec_next' has been explicitly marked deprecated here
+attribute_deprecated
+^
+D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include\libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+1 warning generated.
+[3/4] Building CXX object CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o
+[4/4] Linking CXX shared library D:\PrivateStudy\Code\OctoberPlayer\app\build\intermediates\cmake\debug\obj\armeabi-v7a\libnative-lib.so
+FAILED: D:/PrivateStudy/Code/OctoberPlayer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so 
+cmd.exe /C "cd . && D:\SDK\ndk\21.3.6528147\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,libnative-lib.so -o D:\PrivateStudy\Code\OctoberPlayer\app\build\intermediates\cmake\debug\obj\armeabi-v7a\libnative-lib.so CMakeFiles/native-lib.dir/native-lib.cpp.o CMakeFiles/native-lib.dir/utils/timer.c.o CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o  D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libavutil.so D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libswresample.so D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libavcodec.so D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libavfilter.so D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libswscale.so D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libavformat.so D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/../jniLibs/armeabi-v7a/libavdevice.so -llog -latomic -lm && cd ."
+CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o:base_decoder.cpp:vtable for BaseDecoder: error: undefined reference to 'BaseDecoder::GoOn()'
+CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o:base_decoder.cpp:vtable for BaseDecoder: error: undefined reference to 'BaseDecoder::Pause()'
+CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o:base_decoder.cpp:vtable for BaseDecoder: error: undefined reference to 'BaseDecoder::Stop()'
+CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o:base_decoder.cpp:vtable for BaseDecoder: error: undefined reference to 'BaseDecoder::IsRunning()'
+CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o:base_decoder.cpp:vtable for BaseDecoder: error: undefined reference to 'BaseDecoder::GetDuration()'
+CMakeFiles/native-lib.dir/media/decoder/base_decoder.cpp.o:base_decoder.cpp:vtable for BaseDecoder: error: undefined reference to 'BaseDecoder::GetCurPos()'
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

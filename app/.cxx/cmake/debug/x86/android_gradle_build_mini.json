@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "D:\\SDK\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake",
+    "D:\\SDK\\ndk\\21.3.6528147\\build\\cmake\\platforms.cmake",
+    "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "D:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-x86": {
+      "artifactName": "native-lib",
+      "buildCommand": "D:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\x86\" native-lib",
+      "abi": "x86",
+      "output": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libnative-lib.so"
+    }
+  }
+}
