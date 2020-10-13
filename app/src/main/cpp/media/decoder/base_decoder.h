@@ -93,11 +93,32 @@ private :
 
 public:
     //-------------------------------------------构造方法，析构方法
-    BaseDecoder(JNIEnv *env, jstring path);
+    BaseDecoder(JNIEnv *env, jstring path, bool for_synthesizer);
 
     virtual ~BaseDecoder();
 
     //-------------------------------------------实现基类方法
+
+    /**
+     * 视频宽度
+     * @return
+     */
+    int width() {
+        return m_codec_ctx->width;
+    }
+
+    /**
+     * 视频高度
+     * @return
+     */
+    int height() {
+        return m_codec_ctx->height;
+    }
+
+    long duration() {
+        return m_duration;
+    }
+
     void GoOn() override;
 
     void Pause() override;
@@ -124,6 +145,9 @@ public:
     pthread_mutex_t m_mutex = PTHREAD_MUTEX_INITIALIZER;
     pthread_cond_t m_cond = PTHREAD_COND_INITIALIZER;
 
+    // 为合成器提供解码
+    bool m_for_synthesizer = false;
+
     /**
      * 新建解码线程
      */
@@ -133,7 +157,7 @@ public:
      * 静态解码方法，用于解码线程回调
      * @param that 当前解码器
      */
-    static void Decode(std::shared_ptr <BaseDecoder> that);
+    static void Decode(std::shared_ptr<BaseDecoder> that);
 
 protected:
 
@@ -147,7 +171,58 @@ protected:
      */
     void SendSignal();
 
+    /**
+     * 是否为合成器提供解码
+     * @return true 为合成器提供解码 false 解码播放
+     */
+    bool ForSynthesizer() {
+        return m_for_synthesizer;
+    }
+
+    const char *path() {
+        return m_path;
+    }
+
+    /**
+     * 解码器上下文
+     * @return
+     */
+    AVCodecContext *codec_cxt() {
+        return m_codec_ctx;
+    }
+
+    /**
+     * 视频数据编码格式
+     * @return
+     */
+    AVPixelFormat video_pixel_format() {
+        return m_codec_ctx->pix_fmt;
+    }
+
+    /**
+     * 获取解码时间基
+     */
+    AVRational time_base() {
+        return m_format_ctx->streams[m_stream_index]->time_base;
+    }
+
+    /**
+     * 解码一帧数据
+     * @return
+     */
+    AVFrame *DecodeOneFrame();
+
     //-------------------------------------------子类需要实现的虚函数，规定子类需要实现的方法
+    /**
+     * 音视频索引
+     */
+    virtual AVMediaType GetMediaType() = 0;
+
+    /**
+     * 是否需要自动循环解码
+     */
+    virtual bool NeedLoopDecode() = 0;
+
     /**
      * 子类准备回调方法
      * @note 注：在解码线程中回调
@@ -166,6 +241,11 @@ protected:
      * 子类释放资源回调方法
      */
     virtual void Release() = 0;
+
+    /**
+     * Log前缀
+     */
+    virtual const char *const LogSpec() = 0;
 
 
 };

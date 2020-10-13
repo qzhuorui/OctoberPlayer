@@ -15,5 +15,23 @@
   "directory": "D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a",
   "command": "D:\\SDK\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -ID:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\native-lib.dir\\media\\decoder\\base_decoder.cpp.o -c D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\base_decoder.cpp",
   "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\base_decoder.cpp"
+},
+
+{
+  "directory": "D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "D:\\SDK\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -ID:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\native-lib.dir\\media\\decoder\\video\\v_decoder.cpp.o -c D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\video\\v_decoder.cpp",
+  "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\video\\v_decoder.cpp"
+},
+
+{
+  "directory": "D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "D:\\SDK\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -ID:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\native-lib.dir\\media\\render\\video\\native_render\\native_render.cpp.o -c D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\video\\native_render\\native_render.cpp",
+  "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\video\\native_render\\native_render.cpp"
+},
+
+{
+  "directory": "D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "D:\\SDK\\ndk\\21.3.6528147\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi19 --gcc-toolchain=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -ID:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\native-lib.dir\\media\\player\\player.cpp.o -c D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\player\\player.cpp",
+  "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\player\\player.cpp"
 }
 ]

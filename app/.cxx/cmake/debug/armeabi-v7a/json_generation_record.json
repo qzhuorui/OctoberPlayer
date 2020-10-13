@@ -19,6 +19,240 @@
   },
   {
     "level": "INFO",
+    "message": "Parsing D:\\SDK\\add-ons\\addon-google_apis-google-24\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing legacy package: D:\\SDK\\android-ndk-r14b",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing legacy package: D:\\SDK\\android-ndk-r15c",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing legacy package: D:\\SDK\\android-ndk-r16b",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\23.0.3\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\25.0.0\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\25.0.3\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\26.0.1\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\26.0.2\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\27.0.3\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\28.0.0\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\28.0.2\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\28.0.3\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\29.0.2\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\29.0.3\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\build-tools\\30.0.0-rc1\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\cmake\\3.10.2.4988404\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\cmake\\3.6.4111459\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\emulator\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\extras\\android\\m2repository\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\extras\\google\\m2repository\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\extras\\intel\\Hardware_Accelerated_Execution_Manager\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\extras\\m2repository\\com\\android\\support\\constraint\\constraint-layout-solver\\1.0.2\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\extras\\m2repository\\com\\android\\support\\constraint\\constraint-layout\\1.0.2\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\lldb\\3.1\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\ndk-bundle\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\ndk\\21.3.6528147\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\patcher\\v4\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platform-tools\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-17\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-23\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-25\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-26\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-27\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-28\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\platforms\\android-29\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\sources\\android-25\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\sources\\android-28\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing D:\\SDK\\tools\\package.xml",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
     "message": "- CMake found in SDK at \u0027D:\\SDK\\cmake\\3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
     "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|armeabi-v7a"
@@ -31,7 +265,379 @@
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
+    "message": "rebuilding JSON D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json due to:",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "- force flag, will remove stale json folder",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\u0027",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\u0027",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : D:\\SDK\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\n-DCMAKE_CXX_FLAGS\u003d-std\u003dc++11 -frtti -fexceptions\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\SDK\\ndk\\21.3.6528147\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dD:\\SDK\\ndk\\21.3.6528147\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_NDK\u003dD:\\SDK\\ndk\\21.3.6528147\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\PrivateStudy\\Code\\OctoberPlayer\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\n-DCMAKE_MAKE_PROGRAM\u003dD:\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-BD:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\n-GNinja\njvmArgs : \n\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp\",\n  \"buildDirectory\": \"D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_CXX_FLAGS\\u003d-std\\u003dc++11 -frtti -fexceptions\",\n    \"-DCMAKE_BUILD_TYPE\\u003dDebug\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dD:\\\\SDK\\\\ndk\\\\21.3.6528147\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darmeabi-v7a\",\n    \"-DANDROID_NDK\\u003dD:\\\\SDK\\\\ndk\\\\21.3.6528147\",\n    \"-DANDROID_PLATFORM\\u003dandroid-19\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darmeabi-v7a\",\n    \"-DCMAKE_ANDROID_NDK\\u003dD:\\\\SDK\\\\ndk\\\\21.3.6528147\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dD:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\build\\\\intermediates\\\\cmake\\\\debug\\\\obj\\\\armeabi-v7a\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dD:\\\\SDK\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d19\"\n  ]\n}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info - done",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features - done",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info - done",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features - done",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring done\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Configuring done",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"type\":\"reply\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"compute\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"message\":\"Generating done\",\"type\":\"message\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "Generating done",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"type\":\"reply\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"cmakeInputs\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"D:/SDK/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\",\"D:/SDK/ndk/21.3.6528147/build/cmake/platforms.cmake\",\"D:/SDK/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"D:/SDK/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp\",\"type\":\"reply\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"codemodel\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"configurations\":[{\"name\":\"Debug\",\"projects\":[{\"buildDirectory\":\"D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a\",\"name\":\"Project\",\"sourceDirectory\":\"D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp\",\"targets\":[{\"artifacts\":[\"D:/PrivateStudy/Code/OctoberPlayer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so\"],\"buildDirectory\":\"D:/PrivateStudy/Code/OctoberPlayer/app/.cxx/cmake/debug/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -O0 -fno-limit-debug-info  -fPIC  \",\"defines\":[\"native_lib_EXPORTS\"],\"includePath\":[{\"path\":\"D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include\"}],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"utils/timer.c\"]},{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -std\u003dc++11 -frtti -fexceptions -std\u003dgnu++11 -O0 -fno-limit-debug-info  -fPIC  \",\"defines\":[\"native_lib_EXPORTS\"],\"includePath\":[{\"path\":\"D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp/ffmpeg/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"native-lib.cpp\",\"media/decoder/base_decoder.cpp\",\"media/decoder/video/v_decoder.cpp\",\"media/render/video/native_render/native_render.cpp\",\"media/player/player.cpp\"]},{\"isGenerated\":false,\"sources\":[\"utils/logger.h\",\"utils/const.h\",\"media/decoder/decode_state.h\",\"media/decoder/i_decoder.h\",\"media/one_frame.h\",\"media/render/video/video_render.h\"]}],\"fullName\":\"libnative-lib.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libavutil.so D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libswresample.so D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libavcodec.so D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libavfilter.so D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libswscale.so D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libavformat.so D:\\\\PrivateStudy\\\\Code\\\\OctoberPlayer\\\\app\\\\src\\\\main\\\\cpp\\\\..\\\\jniLibs\\\\armeabi-v7a\\\\libavdevice.so -landroid -llog -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"native-lib\",\"sourceDirectory\":\"D:/PrivateStudy/Code/OctoberPlayer/app/src/main/cpp\",\"sysroot\":\"D:/SDK/ndk/21.3.6528147/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\build_output.txt",
+    "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\build_command.txt",
     "file": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
     "tag": "debug|armeabi-v7a"
   },

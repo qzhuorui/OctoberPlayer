@@ -88,11 +88,22 @@ add_library( # Sets the name of the library.
         ${CMAKE_SOURCE_DIR}/utils/timer.c
         ${CMAKE_SOURCE_DIR}/utils/const.h
 
-
         # 解码器
         ${CMAKE_SOURCE_DIR}/media/decoder/decode_state.h
         ${CMAKE_SOURCE_DIR}/media/decoder/i_decoder.h
         ${CMAKE_SOURCE_DIR}/media/decoder/base_decoder.cpp
+        ${CMAKE_SOURCE_DIR}/media/decoder/video/v_decoder.cpp
+
+        # 自定义帧数据类型
+        ${CMAKE_SOURCE_DIR}/media/one_frame.h
+
+        # 渲染器
+        ${CMAKE_SOURCE_DIR}/media/render/video/video_render.h
+        ${CMAKE_SOURCE_DIR}/media/render/video/native_render/native_render.cpp
+
+        # 播放器
+        ${CMAKE_SOURCE_DIR}/media/player/player.cpp
+
         )
 
 # 指定编译目标库时，cmake要链接的库，把前面添加的FFmpeg so库都链接到目标库native-lib上
@@ -110,6 +121,7 @@ target_link_libraries(
         avformat
         avdevice
 
+        android
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib} )

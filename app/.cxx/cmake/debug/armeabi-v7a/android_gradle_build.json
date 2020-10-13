@@ -35,6 +35,21 @@
           "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\base_decoder.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\video\\v_decoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\video\\native_render\\native_render.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\player\\player.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [
@@ -52,6 +67,14 @@
         },
         {
           "header": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\i_decoder.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\one_frame.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\video\\video_render.h",
           "workingDirectoryOrdinal": 0
         }
       ],

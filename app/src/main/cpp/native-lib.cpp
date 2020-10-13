@@ -4,6 +4,8 @@
 #include <jni.h>
 #include <string>
 #include <unistd.h>
+#include "media/player/player.h"
+
 
 extern "C" {
 #include <libavcodec/avcodec.h>
@@ -36,6 +38,25 @@ Java_com_qzr_octoberplayer_MainActivity_ffmpegInfo(JNIEnv *env, jobject) {
         c_temp = c_temp->next;
     }
     return env->NewStringUTF(info);
+}
+
+JNIEXPORT jint JNICALL
+Java_com_qzr_octoberplayer_MainActivity_createPlayer(JNIEnv *env, jobject, jstring path,
+                                                     jobject surface) {
+    Player *player = new Player(env, path, surface);
+    return (jint) player;
+}
+
+JNIEXPORT void JNICALL
+Java_com_qzr_octoberplayer_MainActivity_play(JNIEnv *env, jobject, jint player) {
+    Player *p = reinterpret_cast<Player *>(player);
+    p->player();
+}
+
+JNIEXPORT void JNICALL
+Java_com_qzr_octoberplayer_MainActivity_pause(JNIEnv *env, jobject, jint player) {
+    Player *p = reinterpret_cast<Player *>(player);
+    p->pauser();
 }
 
 }
