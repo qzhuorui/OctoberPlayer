@@ -97,6 +97,8 @@ add_library( # Sets the name of the library.
         ${CMAKE_SOURCE_DIR}/media/decoder/base_decoder.cpp
         # 视频解码器
         ${CMAKE_SOURCE_DIR}/media/decoder/video/v_decoder.cpp
+        # 音频解码器
+        ${CMAKE_SOURCE_DIR}/media/decoder/audio/a_decoder.cpp
 
         # 自定义帧数据类型
         ${CMAKE_SOURCE_DIR}/media/one_frame.h

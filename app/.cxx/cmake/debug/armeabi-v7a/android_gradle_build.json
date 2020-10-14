@@ -42,6 +42,11 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\decoder\\audio\\a_decoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\video\\native_render\\native_render.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0

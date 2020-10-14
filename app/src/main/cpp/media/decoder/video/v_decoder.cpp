@@ -19,7 +19,7 @@ void VideoDecoder::SetRender(VideoRender *render) {
 void VideoDecoder::InitRender(JNIEnv *env) {
     if (m_video_render != NULL) {
         int dst_size[2] = {-1, -1};
-        m_video_render->InitRender(env, width(), height(), dst_size);
+        m_video_render->InitRender(env, width(), height(), dst_size);//绑定窗口，获取实际要显示的宽高
 
         m_dst_w = dst_size[0];
         m_dst_h = dst_size[1];
@@ -57,13 +57,14 @@ bool VideoDecoder::NeedLoopDecode() {
     return false;
 }
 
-//初始化，准备解码环境，初始化完解码器之后调用
+//初始化，准备解码环境，初始化完解码器之后调用；基类会回调
 void VideoDecoder::Prepare(JNIEnv *env) {
     InitRender(env);//初始化渲染器
     InitBuffer();//存放数据缓存初始化
     InitSws();//初始化数据转换工具
 }
 
+//基类 DecodeOneFrame后 回调
 void VideoDecoder::Render(AVFrame *frame) {
     sws_scale(m_sws_ctx, frame->data, frame->linesize, 0,
               height(), m_rgb_frame->data, m_rgb_frame->linesize);
@@ -71,9 +72,11 @@ void VideoDecoder::Render(AVFrame *frame) {
     OneFrame *one_frame = new OneFrame(m_rgb_frame->data[0], m_rgb_frame->linesize[0], frame->pts,
                                        time_base(), NULL,
                                        false);
+    //把处理后的解码数据再传出
     m_video_render->Render(one_frame);
 }
 
+//由基类回调通知
 void VideoDecoder::Release() {
     LOGE(TAG, "[VIDEO] release");
     if (m_rgb_frame != NULL) {

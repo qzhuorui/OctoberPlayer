@@ -40,6 +40,7 @@ void BaseDecoder::CreateDecodeThread() {
 //-------------------------------------------封装解码流程
 //Decode方法在线程回调中
 void BaseDecoder::Decode(std::shared_ptr<BaseDecoder> that) {
+    //本线程对应的JNIEnv
     JNIEnv *env;
 
     //将线程附加到虚拟机，并获取env
@@ -52,7 +53,7 @@ void BaseDecoder::Decode(std::shared_ptr<BaseDecoder> that) {
     that->InitFFMpegDecoder(env);
     //分配解码帧数据内存
     that->AllocFrameBuffer();
-    //回调子类方法，通知子类解码器初始化完毕
+    //virtual,回调子类方法，通知子类解码器初始化完毕，进行初始化渲染
     that->Prepare(env);
     //进入解码循环
     that->LoopDecode();
@@ -120,7 +121,7 @@ void BaseDecoder::InitFFMpegDecoder(JNIEnv *env) {
     LOG_INFO(TAG, LogSpec(), "Decoder init success");
 }
 
-//初始化待解码和解码数据结构，仅分配内存
+//初始化待解码和解码数据结构，仅分配内存,m_packet,m_frame
 void BaseDecoder::AllocFrameBuffer() {
     //1.初始化AVPacket，存放解码前的数据
     m_packet = av_packet_alloc();
@@ -170,7 +171,7 @@ void BaseDecoder::LoopDecode() {
     }
 }
 
-//解码一帧数据
+//解码一帧数据，交由子类渲染处理
 AVFrame *BaseDecoder::DecodeOneFrame() {
     //1.从m_format_ctx读取一帧解封好的待解码数据，存放m_packet
     int ret = av_read_frame(m_format_ctx, m_packet);
@@ -241,6 +242,7 @@ void BaseDecoder::DoneDecode(JNIEnv *env) {
     //通知子类释放资源
     Release();
 }
+
 
 void BaseDecoder::Wait(long second) {
     pthread_mutex_lock(&m_mutex);
