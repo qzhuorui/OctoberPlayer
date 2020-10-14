@@ -39,10 +39,10 @@ private :
     //最终解码数据
     AVFrame *m_frame = NULL;
 
-    //当前播放时间
-    int64_t m_cur_t_s = 0;
     //总时长
     long m_duration = 0;
+    //当前播放时间
+    int64_t m_cur_t_s = 0;
     //开始播放的时间
     int64_t m_started_t = -1;
 
@@ -97,12 +97,10 @@ public:
 
     virtual ~BaseDecoder();
 
-    //-------------------------------------------实现基类方法
-
     /**
-     * 视频宽度
-     * @return
-     */
+ * 视频宽度
+ * @return
+ */
     int width() {
         return m_codec_ctx->width;
     }
@@ -115,10 +113,15 @@ public:
         return m_codec_ctx->height;
     }
 
+    /**
+     * 视频时长
+     * @return
+     */
     long duration() {
         return m_duration;
     }
 
+    //-------------------------------------------实现基类方法，解码器基础功能
     void GoOn() override;
 
     void Pause() override;
@@ -132,12 +135,11 @@ public:
     long GetCurPos() override;
 
     //-------------------------------------------定义线程相关
-    //线程依附的JVM环境
+    //线程依附的JVM环境，同于在新的解码线程中获取env，JNIEnv和线程是一一对应的
     JavaVM *m_jvm_for_thread = NULL;
 
     //原始路径jstring引用，否则无法在线程中操作
     jobject m_path_ref = NULL;
-
     //经过转换的路径
     const char *m_path = NULL;
 
@@ -214,16 +216,6 @@ protected:
 
     //-------------------------------------------子类需要实现的虚函数，规定子类需要实现的方法
     /**
-     * 音视频索引
-     */
-    virtual AVMediaType GetMediaType() = 0;
-
-    /**
-     * 是否需要自动循环解码
-     */
-    virtual bool NeedLoopDecode() = 0;
-
-    /**
      * 子类准备回调方法
      * @note 注：在解码线程中回调
      * @param env 解码线程绑定的JVM环境
@@ -247,6 +239,15 @@ protected:
      */
     virtual const char *const LogSpec() = 0;
 
+    /**
+     * 音视频索引
+     */
+    virtual AVMediaType GetMediaType() = 0;
+
+    /**
+     * 是否需要自动循环解码
+     */
+    virtual bool NeedLoopDecode() = 0;
 
 };
 

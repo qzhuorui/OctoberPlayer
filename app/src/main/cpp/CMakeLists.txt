@@ -89,9 +89,13 @@ add_library( # Sets the name of the library.
         ${CMAKE_SOURCE_DIR}/utils/const.h
 
         # 解码器
+        # 定义解码器状态
         ${CMAKE_SOURCE_DIR}/media/decoder/decode_state.h
+        # 定义解码器基础方法
         ${CMAKE_SOURCE_DIR}/media/decoder/i_decoder.h
+        # 封装解码器基础流程
         ${CMAKE_SOURCE_DIR}/media/decoder/base_decoder.cpp
+        # 视频解码器
         ${CMAKE_SOURCE_DIR}/media/decoder/video/v_decoder.cpp
 
         # 自定义帧数据类型

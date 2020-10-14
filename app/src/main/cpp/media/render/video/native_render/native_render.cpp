@@ -19,7 +19,7 @@ void NativeRender::InitRender(JNIEnv *env, int video_width, int video_height, in
     int windowWidth = ANativeWindow_getWidth(m_native_window);
     int windowHeight = ANativeWindow_getHeight(m_native_window);
 
-    //计算目标视频的宽高
+    //计算目标视频的宽高，可根据具体需求计算出显示的宽高
     m_dst_w = windowWidth;
     m_dst_h = m_dst_w * video_height / video_width;
     if (m_dst_h > windowHeight) {

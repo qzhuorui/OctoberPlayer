@@ -1,9 +1,10 @@
 /**
   * @ProjectName:    OctoberPlayer
-  * @Description:      封装解码中基础的流程
+  * @Description:      封装解码中基础的流程，实现基础解码器
   * @Author:         qzhuorui
   * @CreateDate:     2020/10/12 16:16
  */
+
 #include "base_decoder.h"
 #include "../../utils/timer.c"
 
@@ -37,6 +38,7 @@ void BaseDecoder::CreateDecodeThread() {
 }
 
 //-------------------------------------------封装解码流程
+//Decode方法在线程回调中
 void BaseDecoder::Decode(std::shared_ptr<BaseDecoder> that) {
     JNIEnv *env;
 
@@ -61,14 +63,14 @@ void BaseDecoder::Decode(std::shared_ptr<BaseDecoder> that) {
     that->m_jvm_for_thread->DetachCurrentThread();
 }
 
+//初始化-》打开解码器
 void BaseDecoder::InitFFMpegDecoder(JNIEnv *env) {
     //1.初始化上下文
     m_format_ctx = avformat_alloc_context();
     //2.打开文件
-    av_register_all();
-    int result = avformat_open_input(&m_format_ctx, m_path, NULL, NULL);
-    if (result != 0) {
-        LOG_ERROR(TAG, LogSpec(), "Fail to open file [%s] resultCode [%s]", m_path, result);
+    int error_code = avformat_open_input(&m_format_ctx, m_path, NULL, NULL);
+    if (error_code != 0) {
+        LOG_ERROR(TAG, LogSpec(), "Fail to open file resultCode [%d]", error_code);
         DoneDecode(env);
         return;
     }
@@ -93,7 +95,7 @@ void BaseDecoder::InitFFMpegDecoder(JNIEnv *env) {
         DoneDecode(env);
         return;
     }
-    m_stream_index = vIdx;
+    m_stream_index = vIdx;//数据流索引
     //4.2获取解码器参数
     AVCodecParameters *codecPar = m_format_ctx->streams[vIdx]->codecpar;
     //4.3获取解码器
@@ -137,7 +139,7 @@ void BaseDecoder::LoopDecode() {
     while (1) {
         if (m_state != DECODING && m_state != START && m_state != STOP) {
             Wait();
-            //恢复同步起始时间，去除等待流逝的时间；音视频同步方案
+            //恢复同步起始时间，去除等待流逝的时间，可以理解为新的起点参照点；音视频同步方案
             m_started_t = GetCurMsTime() - m_cur_t_s;
         }
 
@@ -152,7 +154,7 @@ void BaseDecoder::LoopDecode() {
         if (DecodeOneFrame() != NULL) {
             //时间同步
             SyncRender();
-            Render(m_frame);
+            Render(m_frame);//子类去实现
 
             if (m_state == START) {
                 m_state = PAUSE;
@@ -194,7 +196,7 @@ AVFrame *BaseDecoder::DecodeOneFrame() {
             //3.接收一帧解码好的数据，存放在m_frame中
             int result = avcodec_receive_frame(m_codec_ctx, m_frame);
             if (result == 0) {
-                ObtainTimeStamp();
+                ObtainTimeStamp();//获取当前帧时间戳
                 av_packet_unref(m_packet);
                 return m_frame;
             } else {
@@ -202,7 +204,7 @@ AVFrame *BaseDecoder::DecodeOneFrame() {
                          av_err2str(AVERROR(result)))
             }
         }
-        //释放packet
+        //释放packet，否则会内存泄漏
         av_packet_unref(m_packet);
         ret = av_read_frame(m_format_ctx, m_packet);
     }

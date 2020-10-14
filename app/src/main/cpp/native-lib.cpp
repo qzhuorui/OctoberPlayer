@@ -12,8 +12,10 @@ extern "C" {
 #include <libavformat/avformat.h>
 #include <libavfilter/avfilter.h>
 #include <libavcodec/jni.h>
+}
 
-JNIEXPORT jstring JNICALL
+
+extern "C" JNIEXPORT jstring JNICALL
 Java_com_qzr_octoberplayer_MainActivity_ffmpegInfo(JNIEnv *env, jobject) {
     char info[40000] = {0};
     AVCodec *c_temp = av_codec_next(NULL);
@@ -40,23 +42,21 @@ Java_com_qzr_octoberplayer_MainActivity_ffmpegInfo(JNIEnv *env, jobject) {
     return env->NewStringUTF(info);
 }
 
-JNIEXPORT jint JNICALL
+extern "C" JNIEXPORT jint JNICALL
 Java_com_qzr_octoberplayer_MainActivity_createPlayer(JNIEnv *env, jobject, jstring path,
                                                      jobject surface) {
     Player *player = new Player(env, path, surface);
     return (jint) player;
 }
 
-JNIEXPORT void JNICALL
+extern "C" JNIEXPORT void JNICALL
 Java_com_qzr_octoberplayer_MainActivity_play(JNIEnv *env, jobject, jint player) {
     Player *p = reinterpret_cast<Player *>(player);
     p->player();
 }
 
-JNIEXPORT void JNICALL
+extern "C" JNIEXPORT void JNICALL
 Java_com_qzr_octoberplayer_MainActivity_pause(JNIEnv *env, jobject, jint player) {
     Player *p = reinterpret_cast<Player *>(player);
     p->pauser();
-}
-
 }

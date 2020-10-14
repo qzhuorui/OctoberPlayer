@@ -1,6 +1,6 @@
 //
 // Created by qzr on 2020/10/13.
-//
+//视频播放编解码器
 
 #include "v_decoder.h"
 

@@ -1,6 +1,6 @@
 //
 // Created by qzr on 2020/10/13.
-//视频播放，编解码器
+//视频播放解码器
 //
 
 #ifndef OCTOBERPLAYER_V_DECODER_H
