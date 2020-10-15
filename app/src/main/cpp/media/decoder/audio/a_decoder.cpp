@@ -4,6 +4,7 @@
 
 #include <libavutil/opt.h>
 #include "a_decoder.h"
+#include "../../render/audio/audio_render.h"
 
 AudioDecoder::AudioDecoder(JNIEnv *env, const jstring path, bool for_synthesizer) : BaseDecoder(env,
                                                                                                 path,
@@ -72,7 +73,7 @@ void AudioDecoder::Render(AVFrame *frame) {
     int ret = swr_convert(m_swr, m_out_buffer, m_dest_data_size / 2,
                           (const uint8_t **) frame->data, frame->nb_samples);//渲染之前，转换音频数据
     if (ret > 0) {
-        m_render->Rend(m_out_buffer[0], (size_t) m_dest_data_size);
+        m_render->Render(m_out_buffer[0], (size_t) m_dest_data_size);
     }
 }
 

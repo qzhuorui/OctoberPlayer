@@ -9,6 +9,7 @@
 #include <libswresample/swresample.h>
 #include "../base_decoder.h"
 #include "../../../utils/const.h"
+#include "../../render/audio/audio_render.h"
 
 class AudioDecoder : public BaseDecoder {
 

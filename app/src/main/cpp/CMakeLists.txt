@@ -103,9 +103,12 @@ add_library( # Sets the name of the library.
         # 自定义帧数据类型
         ${CMAKE_SOURCE_DIR}/media/one_frame.h
 
-        # 渲染器
+        # 视频渲染器
         ${CMAKE_SOURCE_DIR}/media/render/video/video_render.h
         ${CMAKE_SOURCE_DIR}/media/render/video/native_render/native_render.cpp
+        # 音频渲染器
+        ${CMAKE_SOURCE_DIR}/media/render/audio/audio_render.h
+        ${CMAKE_SOURCE_DIR}/media/render/audio/opensl_render.cpp
 
         # 播放器
         ${CMAKE_SOURCE_DIR}/media/player/player.cpp
@@ -128,6 +131,8 @@ target_link_libraries(
         avdevice
 
         android
+        # 打开opengsl es 支持
+        OpenSLES
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib} )

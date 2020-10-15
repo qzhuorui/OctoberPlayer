@@ -52,6 +52,11 @@
           "workingDirectoryOrdinal": 0
         },
         {
+          "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\audio\\opensl_render.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
           "src": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\player\\player.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
@@ -80,6 +85,10 @@
         },
         {
           "header": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\video\\video_render.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "D:\\PrivateStudy\\Code\\OctoberPlayer\\app\\src\\main\\cpp\\media\\render\\audio\\audio_render.h",
           "workingDirectoryOrdinal": 0
         }
       ],
