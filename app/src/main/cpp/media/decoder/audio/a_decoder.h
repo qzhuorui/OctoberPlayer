@@ -17,7 +17,7 @@ private:
     const char *TAG = "AudioDecoder";
 
     //音频转换器，用来转化采样率，解码通道数，采样位数
-    //这里用来将音频参数转换为双通道立体声，统一采样
+    //这里用来将音频参数转换为双通道立体声，统一采样位数
     SwrContext *m_swr = NULL;
     //音频渲染器
     AudioRender *m_render = NULL;
@@ -44,6 +44,7 @@ private:
     //释放缓冲区
     void ReleaseOutBuffer();
 
+    //------设置/统一 采样格式和采样率
     //采样格式：16位，设置个默认值
     AVSampleFormat GetSampleFmt() {
         return AV_SAMPLE_FMT_S16;

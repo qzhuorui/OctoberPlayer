@@ -23,6 +23,7 @@ bool OpenSLRender::CreateEngine() {
     return !CheckError(result, "Engine Interface");
 }
 
+//创建混音器
 bool OpenSLRender::CreateOutputMixer() {
     SLresult result = (*m_engine)->CreateOutputMix(m_engine, &m_output_mix_obj, 1, NULL, NULL);
     if (CheckError(result, "Output Mix")) return false;
@@ -46,11 +47,12 @@ bool OpenSLRender::CreatePlayer() {
             SL_SPEAKER_FRONT_LEFT | SL_SPEAKER_FRONT_RIGHT,//立体声
             SL_BYTEORDER_LITTLEENDIAN//结束标志
     };
-    SLDataSource slDataSource = {&android_queue, &pcm};
+    SLDataSource slDataSource = {&android_queue, &pcm};//得到DataSource
 
     //2.配置输出DataSink
-    SLDataLocator_OutputMix outputMix = {SL_DATALOCATOR_OUTPUTMIX, m_output_mix_obj};
-    SLDataSink slDataSink = {&outputMix, NULL};
+    SLDataLocator_OutputMix outputMix = {SL_DATALOCATOR_OUTPUTMIX, m_output_mix_obj};//pLocator
+    SLDataSink slDataSink = {&outputMix, NULL};//得到DataSink
+
     const SLInterfaceID ids[3] = {SL_IID_BUFFERQUEUE, SL_IID_EFFECTSEND, SL_IID_VOLUME};
     const SLboolean req[3] = {SL_BOOLEAN_TRUE, SL_BOOLEAN_TRUE, SL_BOOLEAN_TRUE};
 
@@ -67,12 +69,12 @@ bool OpenSLRender::CreatePlayer() {
     result = (*m_pcm_player_obj)->GetInterface(m_pcm_player_obj, SL_IID_PLAY, &m_pcm_player);
     if (CheckError(result, "Player Volume Interface")) return false;
 
-    //5.获取缓冲队列接口
+    //5.获取缓冲器队列接口
     //注册回调缓冲区，获取缓冲队列接口，用于将数据填入缓冲区
     result = (*m_pcm_player_obj)->GetInterface(m_pcm_player_obj, SL_IID_BUFFERQUEUE, &m_pcm_buffer);
     if (CheckError(result, "Player Queue Buffer")) return false;
     //注册缓冲区接口回调，回调作用：播放器中数据播放完，会回调，通知填充新数据
-    result = (*m_pcm_buffer)->RegisterCallback(m_pcm_buffer, sReadPcmBufferCbFun, this);
+    result = (*m_pcm_buffer)->RegisterCallback(m_pcm_buffer, sReadPcmBufferCbFun, this);//数据源为buffer时，需要一个缓冲接口
     //获取音量接口
     result = (*m_pcm_player_obj)->GetInterface(m_pcm_player_obj, SL_IID_VOLUME,
                                                &m_pcm_player_volume);

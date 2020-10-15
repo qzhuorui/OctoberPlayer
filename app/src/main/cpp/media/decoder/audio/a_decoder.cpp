@@ -52,7 +52,7 @@ void AudioDecoder::InitOutBuffer() {
 }
 
 void AudioDecoder::InitRender() {
-
+    m_render->InitRender();
 }
 
 void AudioDecoder::ReleaseOutBuffer() {
@@ -62,6 +62,7 @@ void AudioDecoder::ReleaseOutBuffer() {
     }
 }
 
+//基类初始化完解码器以后，就会调用
 void AudioDecoder::Prepare(JNIEnv *env) {
     InitSwr();//初始化转换器
     InitOutBuffer();//初始化输出缓冲
@@ -69,10 +70,11 @@ void AudioDecoder::Prepare(JNIEnv *env) {
 }
 
 void AudioDecoder::Render(AVFrame *frame) {
-    //转换，返回每个通道的样本数
+    //渲染之前，转换音频数据，返回每个通道的样本数
     int ret = swr_convert(m_swr, m_out_buffer, m_dest_data_size / 2,
                           (const uint8_t **) frame->data, frame->nb_samples);//渲染之前，转换音频数据
     if (ret > 0) {
+        //调用渲染器进行渲染播放
         m_render->Render(m_out_buffer[0], (size_t) m_dest_data_size);
     }
 }

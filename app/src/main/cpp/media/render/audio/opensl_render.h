@@ -53,8 +53,6 @@ private:
 
     //混音器
     SLObjectItf m_output_mix_obj = NULL;
-    SLEnvironmentalReverbItf m_output_mix_reverb = NULL;
-    SLEnvironmentalReverbSettings m_reverb_settings = SL_I3DL2_ENVIRONMENT_PRESET_DEFAULT;
 
     //pcm播放器
     SLObjectItf m_pcm_player_obj = NULL;
