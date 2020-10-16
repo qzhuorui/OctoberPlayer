@@ -5,7 +5,6 @@
 #include <thread>
 #include <unistd.h>
 #include "opensl_render.h"
-#include "../../../utils/logger.h"
 
 
 //创建引擎
@@ -25,12 +24,23 @@ bool OpenSLRender::CreateEngine() {
 
 //创建混音器
 bool OpenSLRender::CreateOutputMixer() {
-    SLresult result = (*m_engine)->CreateOutputMix(m_engine, &m_output_mix_obj, 1, NULL, NULL);
+    const SLInterfaceID mids[1] = {SL_IID_ENVIRONMENTALREVERB};
+    const SLboolean mreq[1] = {SL_BOOLEAN_FALSE};
+    SLresult result = (*m_engine)->CreateOutputMix(m_engine, &m_output_mix_obj, 1, mids, mreq);
     if (CheckError(result, "Output Mix")) return false;
 
     result = (*m_output_mix_obj)->Realize(m_output_mix_obj, SL_BOOLEAN_FALSE);
-    return !CheckError(result, "Output Mix Realize");
+    if (CheckError(result, "Output Mix Realize")) return false;
 
+    result = (*m_output_mix_obj)->GetInterface(m_output_mix_obj, SL_IID_ENVIRONMENTALREVERB,
+                                               &m_output_mix_evn_reverb);
+    if (CheckError(result, "Output Mix Env Reverb")) return false;
+
+    if (result == SL_RESULT_SUCCESS) {
+        (*m_output_mix_evn_reverb)->SetEnvironmentalReverbProperties(m_output_mix_evn_reverb,
+                                                                     &m_reverb_settings);
+    }
+    return true;
 }
 
 bool OpenSLRender::CreatePlayer() {
@@ -73,8 +83,9 @@ bool OpenSLRender::CreatePlayer() {
     //注册回调缓冲区，获取缓冲队列接口，用于将数据填入缓冲区
     result = (*m_pcm_player_obj)->GetInterface(m_pcm_player_obj, SL_IID_BUFFERQUEUE, &m_pcm_buffer);
     if (CheckError(result, "Player Queue Buffer")) return false;
-    //注册缓冲区接口回调，回调作用：播放器中数据播放完，会回调，通知填充新数据
-    result = (*m_pcm_buffer)->RegisterCallback(m_pcm_buffer, sReadPcmBufferCbFun, this);//数据源为buffer时，需要一个缓冲接口
+    //给播放器!!!注册缓冲区接口回调，回调作用：播放器中数据播放完，会回调，通知填充新数据
+    result = (*m_pcm_buffer)->RegisterCallback(m_pcm_buffer, sReadPcmBufferCbFun,
+                                               this);//数据源为buffer时，需要一个缓冲接口
     //获取音量接口
     result = (*m_pcm_player_obj)->GetInterface(m_pcm_player_obj, SL_IID_VOLUME,
                                                &m_pcm_player_volume);
@@ -89,7 +100,7 @@ bool OpenSLRender::CreatePlayer() {
 
 void OpenSLRender::StartRender() {
     while (m_data_queue.empty()) {
-        //数据缓冲无数据，进入等待
+        //数据缓冲无数据，进入等待，等待解码数据第一帧，才能开始播放!!!
         WaitForCache();
     }
     (*m_pcm_player)->SetPlayState(m_pcm_player, SL_PLAYSTATE_PLAYING);
@@ -137,7 +148,7 @@ bool OpenSLRender::CheckError(SLresult result, std::string hint) {
     return false;
 }
 
-//StartRender()开始，在播放过程中只要OpenSL播放完数据，就会自动回调该方法，重新进入播放流程
+//StartRender()开始和在播放过程中只要OpenSL播放完数据，就会自动回调该方法，重新进入播放流程
 void
 OpenSLRender::sReadPcmBufferCbFun(SLAndroidSimpleBufferQueueItf bufferQueueItf, void *context) {
     OpenSLRender *player = (OpenSLRender *) context;
@@ -180,7 +191,7 @@ void OpenSLRender::Render(uint8_t *pcm, int size) {
             PcmData *pcmData = new PcmData(pcm, size);
             m_data_queue.push(pcmData);
 
-            //通知播放线程推出等待，恢复播放
+            //通知播放线程退出等待，恢复播放
             SendCacheReadySignal();
         }
     } else {
@@ -192,6 +203,6 @@ void OpenSLRender::ReleaseRender() {
 
 }
 
-void static OpenSLRender::sRenderPcm(OpenSLRender *that) {
+void OpenSLRender::sRenderPcm(OpenSLRender *that) {
     that->StartRender();
 }

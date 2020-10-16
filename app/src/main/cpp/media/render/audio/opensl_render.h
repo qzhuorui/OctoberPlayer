@@ -53,6 +53,8 @@ private:
 
     //混音器
     SLObjectItf m_output_mix_obj = NULL;
+    SLEnvironmentalReverbItf m_output_mix_evn_reverb = NULL;
+    SLEnvironmentalReverbSettings m_reverb_settings = SL_I3DL2_ENVIRONMENT_PRESET_DEFAULT;
 
     //pcm播放器
     SLObjectItf m_pcm_player_obj = NULL;
@@ -87,7 +89,7 @@ private:
     //检查是否发生错误
     bool CheckError(SLresult result, std::string hint);
 
-    void static sRenderPcm(OpenSLRender *that);
+    static void sRenderPcm(OpenSLRender *that);
 
     //数据填充通知接口
     void static sReadPcmBufferCbFun(SLAndroidSimpleBufferQueueItf bufferQueueItf, void *context);

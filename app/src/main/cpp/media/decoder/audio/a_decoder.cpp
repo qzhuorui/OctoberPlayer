@@ -2,9 +2,7 @@
 // Created by qzr on 2020/10/14.
 //
 
-#include <libavutil/opt.h>
 #include "a_decoder.h"
-#include "../../render/audio/audio_render.h"
 
 AudioDecoder::AudioDecoder(JNIEnv *env, const jstring path, bool for_synthesizer) : BaseDecoder(env,
                                                                                                 path,
@@ -32,6 +30,9 @@ void AudioDecoder::InitSwr() {
     av_opt_set_int(m_swr, "in_channel_layout", codeCtx->channel_layout, 0);
     av_opt_set_int(m_swr, "out_channel_layout", AUDIO_DEST_CHANNEL_LAYOUT,
                    0);//AUDIO_DEST_CHANNEL_LAYOUT立体声
+
+    av_opt_set_int(m_swr, "in_sample_rate", codeCtx->sample_rate, 0);
+    av_opt_set_int(m_swr, "out_sample_rate", GetSampleRate(codeCtx->sample_rate), 0);
 
     //配置输入/输出采样率
     av_opt_set_sample_fmt(m_swr, "in_sample_fmt", codeCtx->sample_fmt, 0);

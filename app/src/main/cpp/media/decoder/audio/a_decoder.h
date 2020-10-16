@@ -6,10 +6,15 @@
 #define OCTOBERPLAYER_A_DECODER_H
 
 
-#include <libswresample/swresample.h>
 #include "../base_decoder.h"
 #include "../../../utils/const.h"
 #include "../../render/audio/audio_render.h"
+
+extern "C" {
+#include <libswresample/swresample.h>
+#include <libavutil/opt.h>
+#include <libavutil/audio_fifo.h>
+};
 
 class AudioDecoder : public BaseDecoder {
 

@@ -14,8 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private var player: Int? = null
 
-    val path =
-        Environment.getExternalStorageDirectory().absolutePath + "/DCIM/Camera/VID_20201013_154448.mp4"
+    val path = Environment.getExternalStorageDirectory().absolutePath + "/mvtest.mp4"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
