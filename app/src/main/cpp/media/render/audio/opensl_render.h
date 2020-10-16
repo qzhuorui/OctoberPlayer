@@ -46,20 +46,17 @@ private:
     const SLuint32 SL_QUEUE_BUFFER_COUNT = 2;
 
     //------------------------------------定义成员变量
-    //引擎对象
+    //引擎对象/接口
     SLObjectItf m_engine_obj = NULL;
-    //引擎接口
     SLEngineItf m_engine = NULL;
 
-    //混音器
+    //混音器对象/接口
     SLObjectItf m_output_mix_obj = NULL;
-    //引擎接口
     SLEnvironmentalReverbItf m_output_mix_evn_reverb = NULL;
     SLEnvironmentalReverbSettings m_reverb_settings = SL_I3DL2_ENVIRONMENT_PRESET_DEFAULT;
 
-    //pcm播放器
+    //pcm播放器引擎/接口
     SLObjectItf m_pcm_player_obj = NULL;
-    //播放器引擎接口
     SLPlayItf m_pcm_player = NULL;
     //音量接口
     SLVolumeItf m_pcm_player_volume = NULL;
@@ -67,6 +64,7 @@ private:
     //缓冲器队列接口
     SLAndroidSimpleBufferQueueItf m_pcm_buffer;
 
+    //存放数据队列
     std::queue<PcmData *> m_data_queue;
 
     // 缓存线程等待锁变量
@@ -92,6 +90,7 @@ private:
     //检查是否发生错误
     bool CheckError(SLresult result, std::string hint);
 
+    //渲染数据，线程回调static method
     static void sRenderPcm(OpenSLRender *that);
 
     //数据填充通知接口

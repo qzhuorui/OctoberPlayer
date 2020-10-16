@@ -30,10 +30,8 @@ private:
     //输出缓冲
     uint8_t *m_out_buffer[1] = {NULL};
 
-    //重采样后，每个通道包含的采样数
-    //aac默认为1024，重采样后可能会变化
+    //重采样后，每个通道包含的采样数，aac默认为1024，重采样后可能会变化
     int m_dest_nb_sample = 1024;
-
     //重采样后，一帧数据的大小
     size_t m_dest_data_size = 0;
 

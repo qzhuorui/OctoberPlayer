@@ -19,6 +19,7 @@ void AudioDecoder::SetRender(AudioRender *render) {
     m_render = render;
 }
 
+//初始化转换器
 void AudioDecoder::InitSwr() {
     //codec_ctx()为解码上下文，从子类BaseCoder中获取
     AVCodecContext *codeCtx = codec_cxt();
@@ -34,7 +35,6 @@ void AudioDecoder::InitSwr() {
     av_opt_set_int(m_swr, "in_sample_rate", codeCtx->sample_rate, 0);
     av_opt_set_int(m_swr, "out_sample_rate", GetSampleRate(codeCtx->sample_rate), 0);
 
-    //配置输入/输出采样率
     av_opt_set_sample_fmt(m_swr, "in_sample_fmt", codeCtx->sample_fmt, 0);
     av_opt_set_sample_fmt(m_swr, "out_sample_fmt", GetSampleFmt(), 0);
 
