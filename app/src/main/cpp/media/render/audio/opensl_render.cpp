@@ -50,7 +50,7 @@ bool OpenSLRender::CreatePlayer() {
                                                             SL_QUEUE_BUFFER_COUNT};
     SLDataFormat_PCM pcm = {
             SL_DATAFORMAT_PCM,//播放PCM格式的数据
-            (sl_uint32_t) 2,//2个声道（立体声）
+            (SLuint32) 2,//2个声道（立体声）
             SL_SAMPLINGRATE_44_1,//44.1KHZ频率
             SL_PCMSAMPLEFORMAT_FIXED_16,//位数16位
             SL_PCMSAMPLEFORMAT_FIXED_16,//和位数一致就行
@@ -86,12 +86,12 @@ bool OpenSLRender::CreatePlayer() {
     //给播放器!!!注册缓冲区接口回调，回调作用：播放器中数据播放完，会回调，通知填充新数据
     result = (*m_pcm_buffer)->RegisterCallback(m_pcm_buffer, sReadPcmBufferCbFun,
                                                this);//数据源为buffer时，需要一个缓冲接口
+    if (CheckError(result, "Register Callback Interface")) return false;
+
     //获取音量接口
     result = (*m_pcm_player_obj)->GetInterface(m_pcm_player_obj, SL_IID_VOLUME,
                                                &m_pcm_player_volume);
     if (CheckError(result, "Player Volume Interface")) return false;
-
-    if (CheckError(result, "Register Callback Interface")) return false;
 
     LOGI(TAG, "OpenSL ES init success")
 
@@ -105,6 +105,7 @@ void OpenSLRender::StartRender() {
     }
     (*m_pcm_player)->SetPlayState(m_pcm_player, SL_PLAYSTATE_PLAYING);
     sReadPcmBufferCbFun(m_pcm_buffer, this);
+    LOGI(TAG, "openSL render start playing")
 }
 
 //调用播放器播放接口后，往缓冲区中压入数据
@@ -188,7 +189,7 @@ void OpenSLRender::Render(uint8_t *pcm, int size) {
             uint8_t *data = (uint8_t *) malloc(size);
             memcpy(data, pcm, size);
 
-            PcmData *pcmData = new PcmData(pcm, size);
+            PcmData *pcmData = new PcmData(data, size);
             m_data_queue.push(pcmData);
 
             //通知播放线程退出等待，恢复播放

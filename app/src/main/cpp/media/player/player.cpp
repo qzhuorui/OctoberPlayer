@@ -24,7 +24,7 @@ Player::~Player() {
 void Player::player() {
     if (m_v_decoder != NULL) {
         m_v_decoder->GoOn();
-//        m_a_decoder->GoOn();
+        m_a_decoder->GoOn();
     }
 }
 
